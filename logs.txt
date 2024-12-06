@@ -1,0 +1,3 @@
+1. I have changed the activation function ReLu to Leaky Relu
+2. Added env = RecordEpisodeStatistics(env)
+3. Running reward set to 9000
