@@ -14,3 +14,9 @@ Got ValueError: bad marshal data (unknown type code) when downloading the model,
 3. Max_memory_length decreased to 10000
 
 After framecount 4930000 memory issues caused VS collapse.
+1. Decided to go back to final_epsilon = 0.1, as listed in the paper.
+2. Tried vectorizing the environment to speed up training. Got very strange statistical outputs for rewards and best scores which failed to fix before the end of the day.
+ Continued with one-env training.
+3. Starting epsilon set to 0.5 (as we continue the training process)
+
+Final framecount was 5990000. This has been achieved after 3 sessions, each of which lasted for appr. 3 days.
